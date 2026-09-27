@@ -5,6 +5,7 @@ __pycache__/
 .jupyter_runtime/
 .env
 .env.*
+!.env.example
 .pytest_cache/
 
 # Dataset files and generated CSVs stay local; keep the folder structure in Git.

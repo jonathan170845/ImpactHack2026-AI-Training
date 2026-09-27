@@ -3,3 +3,5 @@ numpy>=1.26,<3
 jupyter>=1.1,<2
 ipykernel>=6.29,<8
 nbclient>=0.10,<1
+requests>=2.32,<3
+python-dotenv>=1.0,<2

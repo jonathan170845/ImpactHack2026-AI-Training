@@ -14,6 +14,7 @@ konservatif, melakukan deduplikasi sesuai dataset, lalu menulis serta memvalidas
 - [ ] CG detector
 - [ ] BGE-M3 similarity
 - [ ] Marketplace integration
+- [x] OpenRouter connection check
 - [ ] OpenRouter explanation
 - [ ] FastAPI integration
 
@@ -52,6 +53,8 @@ ImpactHack2026-AI-Training/
 │   ├── figures/
 │   └── reports/
 ├── requirements.txt
+├── cek_openrouter.py
+├── .env.example
 ├── .gitignore
 └── README.md
 ```
@@ -91,6 +94,35 @@ Jalankan regression checks dengan:
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
+
+## Memeriksa koneksi OpenRouter
+
+Isi `OPENROUTER_API_KEY` dan `OPENROUTER_MODEL` di `.env` pada root proyek.
+Pada clone baru, salin `.env.example` menjadi `.env` terlebih dahulu. Ambil API key dari
+[pengaturan OpenRouter](https://openrouter.ai/settings/keys) dan ID model dari
+[katalog model](https://openrouter.ai/models). Simpan key asli hanya di `.env` yang diabaikan Git.
+
+Setelah virtual environment aktif, jalankan dari root proyek:
+
+```bash
+python -m pip install -r requirements.txt
+python cek_openrouter.py
+```
+
+Skrip membaca `.env` di samping file skrip dengan `python-dotenv`, sehingga tidak perlu
+mengaktifkan `python.terminal.useEnvFile` di VS Code. Nilai `.env` mengesampingkan variabel
+bernama sama yang sudah ada di terminal agar perubahan konfigurasi langsung digunakan.
+Satu kali menjalankan skrip mengirim satu pesan uji singkat, dengan batas output 256 token
+dan tanpa retry otomatis. Biaya mengikuti model yang dipilih.
+
+Jika berhasil, terminal menampilkan `Koneksi OpenRouter berhasil.` serta balasan model.
+Jika gagal, skrip menampilkan pesan error dan keluar dengan status 1. Periksa API key untuk
+kode 401, saldo/batas kredit untuk 402, atau tunggu sebelum mencoba lagi untuk 429.
+Detail kode tersedia di [dokumentasi error OpenRouter](https://openrouter.ai/docs/api-reference/errors).
+Model reasoning dapat menghabiskan batas token sebelum menghasilkan teks; jika balasan
+kosong karena batas token, naikkan `max_tokens` di skrip atau pilih model tanpa reasoning.
+
+Pemeriksaan ini menguji akses API; tahap penjelasan hasil analisis ReviewLens belum terhubung.
 
 ## Kebijakan preparation
 
@@ -176,5 +208,6 @@ Temuan yang perlu diperhatikan sebelum tahap model:
 - Tidak ditemukan `clean_text` kosong pada kelima dataset. Schema sumber sesuai kolom
   yang diberikan; challenge memiliki 12 category aktual. Semua nilai CG/OR dipertahankan.
 
-Sentiment, CG detector, similarity/clustering, ingestion, OpenRouter, dan FastAPI belum
-diimplementasikan. Tahap kedua menunggu instruksi lanjutan.
+Sentiment, CG detector, similarity/clustering, ingestion, penjelasan melalui OpenRouter,
+dan FastAPI belum diimplementasikan. Pemeriksaan koneksi OpenRouter tersedia melalui
+`cek_openrouter.py`. Tahap kedua menunggu instruksi lanjutan.
