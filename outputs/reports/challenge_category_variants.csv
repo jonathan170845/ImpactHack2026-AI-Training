@@ -1,0 +1,45 @@
+﻿clean_text,sentiment,categories,category_count
+bagus sekali produknya,positive,"[""aspect_based"", ""short_vague""]",2
+barang standar,neutral,"[""ambiguous"", ""short_vague""]",2
+biasa banget,neutral,"[""ambiguous"", ""contextual""]",2
+biasa lah,neutral,"[""ambiguous"", ""contextual""]",2
+biasa saja banget,neutral,"[""contextual"", ""short_vague""]",2
+cukup lah,neutral,"[""ambiguous"", ""contextual""]",2
+design fair,neutral,"[""ambiguous"", ""short_vague""]",2
+fair untuk harga segini,neutral,"[""ambiguous"", ""short_vague""]",2
+kecewa dengan pelayanan yang parah,negative,"[""aspect_based"", ""short_vague""]",2
+kualitas acceptable,neutral,"[""ambiguous"", ""short_vague""]",2
+kualitas biasa,neutral,"[""ambiguous"", ""contextual""]",2
+"kualitas fantastic, ga nyesel",positive,"[""aspect_based"", ""short_vague""]",2
+kualitas lumayan,neutral,"[""ambiguous"", ""contextual""]",2
+kualitas normal,neutral,"[""ambiguous"", ""short_vague""]",2
+lumayan deh,neutral,"[""ambiguous"", ""short_vague""]",2
+lumayan sih,neutral,"[""ambiguous"", ""short_vague""]",2
+lumayan untuk harga segini,neutral,"[""ambiguous"", ""contextual""]",2
+material lumayan,neutral,"[""ambiguous"", ""short_vague""]",2
+mayan untuk harga segini,neutral,"[""ambiguous"", ""short_vague""]",2
+memadai lah,neutral,"[""ambiguous"", ""short_vague""]",2
+memadai untuk harga segini,neutral,"[""ambiguous"", ""contextual""]",2
+memuaskan sekali barangnya,positive,"[""aspect_based"", ""short_vague""]",2
+normal lah,neutral,"[""ambiguous"", ""short_vague""]",2
+normal sih,neutral,"[""ambiguous"", ""short_vague""]",2
+normal untuk harga segini,neutral,"[""ambiguous"", ""contextual""]",2
+oke lah,neutral,"[""ambiguous"", ""contextual""]",2
+packaging lumayan,neutral,"[""ambiguous"", ""contextual""]",2
+packaging standar,neutral,"[""ambiguous"", ""contextual""]",2
+pelayanan mayan,neutral,"[""ambiguous"", ""contextual""]",2
+pembelian cukup,neutral,"[""ambiguous"", ""short_vague""]",2
+pembelian standar,neutral,"[""ambiguous"", ""contextual""]",2
+produk so-so,neutral,"[""ambiguous"", ""contextual""]",2
+puas dengan design yang berkualitas,positive,"[""aspect_based"", ""short_vague""]",2
+puas dengan packaging yang luar biasa,positive,"[""aspect_based"", ""short_vague""]",2
+puas dengan packaging yang mantap,positive,"[""aspect_based"", ""short_vague""]",2
+puas dengan pengiriman yang berkualitas,positive,"[""aspect_based"", ""short_vague""]",2
+puas dengan produk yang premium,positive,"[""aspect_based"", ""short_vague""]",2
+rata-rata deh,neutral,"[""ambiguous"", ""short_vague""]",2
+standar aja,neutral,"[""ambiguous"", ""short_vague""]",2
+standar lah,neutral,"[""ambiguous"", ""short_vague""]",2
+top sekali kualitasnya,positive,"[""aspect_based"", ""short_vague""]",2
+transaksi lumayan,neutral,"[""contextual"", ""short_vague""]",2
+transaksi rata-rata,neutral,"[""contextual"", ""short_vague""]",2
+transaksi so-so,neutral,"[""ambiguous"", ""contextual""]",2

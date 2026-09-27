@@ -1,0 +1,6 @@
+﻿dataset,file,bytes,sha256,unchanged
+simple,data\raw\simple.json,1858731,d3da9619e7134c6655db877356495332e5a83cd87f803a5e8d18d55bed9e225c,True
+challenge,data\raw\challange.json,633848,4415de2235b65eb2e379212e0d7254bc1d31b9fa83b2573030d8eb3a79243ee1,True
+labeled,data\raw\labeledReview.datasetFix.json,3146807,35151f3f7ac6adfe900484ec135144ef2584d1d511b9bebb8c51c748397d7154,True
+fake,data\raw\fake_reviews.csv,15324616,ea03422988824bc917b5f7217e3867e27b597c647d5261adfae73cd7a85e1e1a,True
+tokopedia,data\raw\tokopedia-product-reviews-2019.csv,9842197,dbffc29078db1894e60884c526fe4d0ccbc592f33fe95d2e5ac2d8f96336b7ed,True

@@ -1,0 +1,5 @@
+pandas>=2.2,<4
+numpy>=1.26,<3
+jupyter>=1.1,<2
+ipykernel>=6.29,<8
+nbclient>=0.10,<1

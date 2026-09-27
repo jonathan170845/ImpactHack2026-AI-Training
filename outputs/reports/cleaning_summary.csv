@@ -1,0 +1,6 @@
+﻿dataset,rows_before,rows_after,removed,removal_percent
+simple,17000,2193,14807,87.1
+challenge,4840,4795,45,0.93
+labeled,11606,11589,17,0.15
+fake,40432,40405,27,0.07
+tokopedia,40607,40607,0,0.0

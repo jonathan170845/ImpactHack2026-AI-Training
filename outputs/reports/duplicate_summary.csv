@@ -1,0 +1,6 @@
+﻿dataset,rows_total,unique_clean_text,duplicate_clean_text_count,empty_clean_text_count
+simple,17000,2193,14807,0
+challenge,4840,4750,90,0
+labeled,11606,11588,18,0
+fake,40432,40405,27,0
+tokopedia,40607,36866,3741,0

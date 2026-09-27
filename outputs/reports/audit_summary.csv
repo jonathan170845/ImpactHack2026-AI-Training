@@ -1,0 +1,6 @@
+﻿dataset,rows,columns,missing_cells,exact_duplicates,unique_text_count
+simple,17000,3,0,14040,2193
+challenge,4840,4,0,0,4840
+labeled,11606,3,0,4,11599
+fake,40432,4,0,12,40412
+tokopedia,40607,8,14,0,37301

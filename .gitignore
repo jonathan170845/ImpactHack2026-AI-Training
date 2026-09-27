@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.jupyter_runtime/
+.env
+.env.*
+.pytest_cache/
+
+# Dataset files and generated CSVs stay local; keep the folder structure in Git.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
